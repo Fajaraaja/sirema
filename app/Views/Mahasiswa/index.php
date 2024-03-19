@@ -4,6 +4,8 @@
 <div class="container">
     <div class="row">
         <div class="col">
+            <a href="/mahasiswa/create" class="btn btn-success mt-3">Tambah Mahasiswa</a>
+            <h2 class="mb-3">Daftar Mahasiswa</h2>
             <table class="table">
                 <thead>
                     <tr>
@@ -23,8 +25,8 @@
                             <td><?= $a['nim']; ?></td>
                             <td><?= $a['prodi']; ?></td>
                             <td>
-                                <a href="" class="btn btn-warning">Edit</a>
-                                <a href="" class="btn btn-danger">Delete</a>
+                                <a href="/mahasiswa/edit/<?= $a['id']; ?>" class="btn btn-warning">Edit</a>
+                                <a href="/mahasiswa/delete/<?= $a['id']; ?>" class="btn btn-danger" onclick="return confirm('Apakah Yakin Ingin Hapus?')">Delete</a>
                             </td>
                         </tr>
                     <?php endforeach; ?>

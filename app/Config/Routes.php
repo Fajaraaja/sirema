@@ -8,3 +8,4 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Pages::index');
 // Set auto route change to true
 $routes->setAutoRoute(true);
+$routes->get('/mahasiswa/create', 'Mahasiswa::create');
